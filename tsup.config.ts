@@ -1,9 +1,14 @@
+
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/index.ts'],
+  entry: {
+    index: 'src/index.ts',
+    server: 'server.ts',
+  },
   format: ['esm', 'cjs'],
   dts: true,
   clean: true,
   target: 'node20',
+  platform: 'node',
 });
