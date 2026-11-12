@@ -32,13 +32,16 @@
       "require": "./dist/index.cjs"
     }
   },
-  "scripts": {
-    "build": "tsup",
-    "release": "changeset publish",
-    "test": "vitest",
-    "test:run": "vitest run",
-    "prepare": "husky || true"
-  },
+  
+"scripts": {
+  "build": "tsup",
+  "start": "node dist/server.js",
+  "release": "changeset publish",
+  "test": "vitest",
+  "test:run": "vitest run",
+  "prepare": "husky || true"
+},
+  
   "dependencies": {
     "linkedom": "^0.18.12"
   },
